@@ -1,0 +1,151 @@
+
+.blog-container{
+
+	background: #fafafa;
+	border-radius: 5px;
+	box-shadow: rgba(0, 0, 0, 0.2) 0 4px 2px -2px;
+	font-weight: 100;
+	margin: 48px auto;
+	width: 40rem;
+	
+}
+
+.blog-container a:hover{
+	border-color: #ff4d4d;
+	color: #ff4d4d;
+}
+
+.blog-cover{
+	background: url(IMG/Write1.jpg);
+	background-size: cover;
+	border-radius: 5px 5px 0 0;
+	height: 15rem;
+	box-shadow: inset rgba(0,0,0,0.2) 0 64px 64px 16px;
+}
+
+.blog-title h1 a{
+	color: #333;
+	font-weight: 100;
+}
+
+.blog-text p{
+	color: #4d4d4d;
+}
+
+.blog-tags ul{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	list-style: none;
+	padding-left: 0;
+}
+
+.blog-tags li + li{
+	margin-left: .5rem;
+}
+
+.blog-tags a{
+	border: 1px solid #999999;
+	border-radius: 3px;
+	color: #999999;
+	font-size: .75rem;
+	height: 1.5rem;
+	letter-spacing: 1px;
+	padding: 0 .5rem;
+	text-align: center;
+	text-transform: uppercase;
+	white-space: nowrap;
+	width: 5rem;
+}
+
+.blog-footer{
+	border-top: 1px solid #e6e6e6;
+	margin: 0 auto;
+	padding-bottom: .125rem;
+	width: 80%;
+
+}
+
+.blog-footer ul{
+	list-style: none;
+	display: flex;
+	flex: row wrap;
+	justify-content: flex-end;
+	padding-left: 0px;
+
+}
+
+.blog-footer li{
+	color: #999999;
+	font-size: .75rem;
+	height: 1.5rem;
+	text-align: center;
+	text-transform: relative;
+	white-space: nowrap;
+}
+
+.published-date{
+	border: 1px solid #999999;
+	border-radius: 3px;
+	padding: 0 .5rem;
+	margin: 5px 0px 0px 0px;
+}
+
+li{
+	text-decorated: none;
+	list-style: none;
+}
+
+a{
+	text-decorated: none;
+}
+
+.blog-main{
+	display: flex;
+	flex-direction: row;
+}
+
+.header{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 4.44 rem;
+	padding: 0 12%;
+	background-color: #3f6c98;
+	box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.05);
+	font-family: Verdana, sans-serif;
+}
+
+.header .logo{
+	flex-grow: 1;
+	color: #efefef;
+}
+
+.header li{
+	display: inline;
+	padding-right: 2.22rem;
+	text-transform: uppercase;
+}
+
+.header li a{
+	text-decoration: none;
+	color: #efefef;
+}
+
+@media only screen and (max-width: 550px){
+	.header{
+		flex-direction: column;
+	}
+	.header .logo{
+		flex-grow: 0;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.blog-container{
+	width: 28rem;
+}
+@media screen and (max-width: 480px){
+	.blog-container{
+	width: 20rem;
+}
